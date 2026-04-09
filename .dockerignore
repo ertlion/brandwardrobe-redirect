@@ -1,0 +1,7 @@
+mirror/
+assets/
+.git/
+.gitignore
+.dockerignore
+.DS_Store
+README.md
