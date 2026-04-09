@@ -22,36 +22,65 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* Redirect Banner */
-    .redirect-banner {
+    /* Announcement Banner */
+    .announcement {
+      background: #fff;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 40px;
+      text-align: center;
+    }
+    .announcement h2 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #292929;
+      margin-bottom: 32px;
+      letter-spacing: -0.01em;
+    }
+    .announcement p {
+      font-size: 15px;
+      line-height: 1.9;
+      color: #444;
+      margin-bottom: 16px;
+      text-align: left;
+    }
+    .announcement .new-address {
+      display: inline-block;
+      margin-top: 24px;
+      font-size: 18px;
+      font-weight: 700;
+      color: #108474;
+    }
+    .announcement .signature {
+      margin-top: 32px;
+      font-size: 14px;
+      color: #888;
+      font-style: italic;
+      text-align: right;
+    }
+    .announcement .cta-link {
+      display: inline-block;
+      margin-top: 32px;
       background: #108474;
       color: #fff;
-      text-align: center;
-      padding: 14px 20px;
+      padding: 14px 40px;
       font-size: 15px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .redirect-banner a {
-      color: #fff;
       font-weight: 600;
-      text-decoration: underline;
-      text-underline-offset: 2px;
-    }
-    .redirect-banner .btn {
-      display: inline-block;
-      background: #fff;
-      color: #108474;
-      padding: 6px 20px;
-      border-radius: 4px;
       text-decoration: none;
-      margin-left: 12px;
-      font-weight: 600;
-      font-size: 14px;
-      transition: opacity .2s;
+      border-radius: 4px;
+      letter-spacing: 0.03em;
+      transition: background .2s, transform .2s;
     }
-    .redirect-banner .btn:hover { opacity: .9; }
+    .announcement .cta-link:hover {
+      background: #0d6e61;
+      transform: translateY(-1px);
+    }
+    .announcement-divider {
+      width: 60px;
+      height: 3px;
+      background: #108474;
+      margin: 0 auto 40px;
+    }
 
     /* Header */
     .header {
@@ -355,24 +384,33 @@
 </head>
 <body>
 
-  <div class="redirect-banner">
-    Brand Wardrobe artik <a href="https://ecmastore.com">ecmastore.com</a> adresinde!
-    <a href="https://ecmastore.com" class="btn">ECMA Store'a Git &rarr;</a>
-  </div>
-
   <header class="header">
     <a href="https://ecmastore.com">
       <img src="/cdn/shop/files/bw-logo.png" alt="Brand Wardrobe">
     </a>
   </header>
 
+  <section class="announcement">
+    <h2>Degerli Musterilerimiz,</h2>
+    <div class="announcement-divider"></div>
+    <p>Brandwardrobe.com olarak yolculugumuzda, 1 Nisan itibariyla <strong>ecmastore.com</strong> uzerinden devam ediyoruz.</p>
+    <p>Sizlere daha guclu bir altyapi, daha yenilenmis bir deneyim ve ayni ozenli hizmet anlayisiyla bundan boyle <a href="https://ecmastore.com" style="color:#108474; font-weight:600;">ecmastore.com</a> adresinden hizmet verecegiz.</p>
+    <p>Gecis sureci boyunca brandwardrobe.com, <strong>30 Nisan</strong> tarihine kadar aktif kalmaya devam edecektir. Bu tarihten sonra ise sitemiz tamamen kapanacaktir.</p>
+    <p>Bu nedenle sizleri yeni adresimiz olan <a href="https://ecmastore.com" style="color:#108474; font-weight:600;">ecmastore.com</a>'u ziyaret etmeye davet ediyoruz.</p>
+    <p>Bizimle ciktiginiz bu yolculukta gosterdiginiz guven ve ilgi icin tesekkur ederiz. Yeni donemimizde de sizlere ayni titizlik ve heyecanla hizmet vermeyi surdurecegiz.</p>
+    <div class="new-address">Yeni adresimiz: <a href="https://ecmastore.com" style="color:#108474;">ecmastore.com</a></div>
+    <div class="signature">Sevgi ve tesekkurlerimizle,<br>Brand Wardrobe Ekibi</div>
+    <br>
+    <a href="https://ecmastore.com" class="cta-link">ecmastore.com'a Git &rarr;</a>
+  </section>
+
   <section class="hero">
     <img src="/cdn/shop/files/hero-raincoats.png" alt="Brand Wardrobe Collection">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1>Brand Wardrobe Tasindi</h1>
-      <p>Sevdiginiz markalar ve surdurulebilir moda artik yeni adresimizde sizi bekliyor.</p>
-      <a href="https://ecmastore.com" class="hero-btn">Yeni Sitemizi Kesfet</a>
+      <h1>Yeni Adresimiz: ecmastore.com</h1>
+      <p>Ayni markalar, ayni kalite, yepyeni deneyim.</p>
+      <a href="https://ecmastore.com" class="hero-btn">Alisverise Basla</a>
     </div>
   </section>
 
